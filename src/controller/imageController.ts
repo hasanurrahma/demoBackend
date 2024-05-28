@@ -49,12 +49,9 @@ export const getVehicleImagesController = async (
 ) => {
   try {
     const vehicleImages = await VehicleImage.find();
-    // res.json({
-    //   success: 1,
-    //   message: "Vehicle images retrieved successfully",
-    //   data: vehicleImages,
-    // });
+
     res.send(vehicleImages);
+    console.log("Welcome");
   } catch (error) {
     console.error(error);
     res.status(500).json({
