@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
 
 const db = () => {
-  const url = "mongodb://127.0.0.1:27017/Veho";
+  const url =
+    "mongodb+srv://rhasanur234:X4gg8PGH1FbOEKQ7@cluster0.ochoajc.mongodb.net/";
   mongoose
     .connect(url)
     .then(() => {
