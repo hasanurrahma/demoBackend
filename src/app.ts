@@ -1,8 +1,8 @@
 import express from "express";
 import { Request, Response, NextFunction } from "express";
 import multer, { MulterError } from "multer";
-import Routes from "../routes/routes";
-import db from "../db/connection";
+import Routes from "./routes/routes";
+import db from "./db/connection";
 import cors from "cors";
 
 const app = express();
