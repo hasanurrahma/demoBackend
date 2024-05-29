@@ -11,6 +11,7 @@ app.use(
     origin: "https://deme1.netlify.app",
   })
 );
+
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "https://deme1.netlify.app");
   res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
